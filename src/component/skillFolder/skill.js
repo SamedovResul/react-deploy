@@ -33,22 +33,22 @@ const SkillBanner =(props)=>{
 	// Leaf animation --------------
 
 	const leafimg = useSpring({
-	to: [{marginLeft:  '-100%', 
+		to: [{marginLeft:  '-10%', 
+		
+		marginTop: location ? '-13%' : '-13%'  }],
 	
-	marginTop: location ? '0%' : '0%'  }],
-
-
-	from: {marginLeft: location? 
-		location.name === 'fromTechnology' ?
-		'-100%' :'0%' : '0%',
 	
-	marginTop: location ?
-	location.name === 'fromTechnology' 
-	? '0%' : '-18%' : '0%' },
-	config: {
-		duration: 300
-	}
-	})
+		from: {marginLeft: location? 
+			location.name === 'fromTechnology' ?
+			'-13%' :'-13%' : '-13%',
+		
+		marginTop: location ?
+		location.name === 'fromTechnology' 
+		? '-110%' : '-18%' : '-110%' },
+		config: {
+			duration: 300
+		}
+		})
 
 	// brush animation --------------
 	
@@ -63,28 +63,28 @@ const SkillBanner =(props)=>{
 	// Gear animation --------------
 
 	const gearimg= useSpring({
-	to: [{marginRight: '-100%',
-
-				marginTop: width <= 768 ? location ?
-				location.name === "fromTechnology"
-				? '-80px' : '-80px' : '-80px' :  location ?
-				location.name === "fromTechnology"
-				? '-110px' : '-110px' : '-110px'
-			}],
-	from: {marginRight: location ?
-				location.name === "fromTechnology" ?
-				'0%' : '57%' : '57%',
-
-				marginTop: width <= 768 ? location ?
-				location.name === "fromTechnology"
-				? '-350px' : '-80px' : '-80px' :  location ?
-				location.name === "fromTechnology"
-				? '-350px' : '-110px' : '-110px'
- 				},
-	config: {
-		duration: 300
-	}
-	})
+		to: [{marginRight: '-10%',
+	
+					marginTop: width <= 768 ? location ?
+					location.name === "fromTechnology"
+					? '-80px' : '-80px' : '-80px' :  location ?
+					location.name === "fromTechnology"
+					? '-210px' : '-210px' : '-210px'
+				}],
+		from: {marginRight: location ?
+					location.name === "fromTechnology" ?
+					'0%' : '57%' : '57%',
+	
+					marginTop: width <= 768 ? location ?
+					location.name === "fromTechnology"
+					? '-350px' : '-80px' : '-80px' :  location ?
+					location.name === "fromTechnology"
+					? '-350px' : '-210px' : '-210px'
+					 },
+		config: {
+			duration: 300
+		}
+		})
 
 
     return(

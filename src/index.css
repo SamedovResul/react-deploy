@@ -355,8 +355,12 @@ body {
   color: white;
 }
 
+.skill-img2{
+  margin-left: auto;
+}
+
 .skill-img1{
-  position: absolute;
+  margin-right: auto;
 }
 
 
