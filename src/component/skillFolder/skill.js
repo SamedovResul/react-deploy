@@ -33,28 +33,18 @@ const SkillBanner =(props)=>{
 	// Leaf animation --------------
 
 	const leafimg = useSpring({
-		to: [{marginLeft:  '-10%', 
-		
-		marginTop: location ? '-13%' : '-13%'  }],
-	
-	
-		from: {marginLeft: location? 
-			location.name === 'fromTechnology' ?
-			'-13%' :'-13%' : '-13%',
-		
-		marginTop: location ?
-		location.name === 'fromTechnology' 
-		? '-110%' : '-18%' : '-110%' },
-		config: {
-			duration: 300
-		}
-		})
+	to: [{ left: '-100px', }],
+	from: { left: '300px', },
+	config: {
+		duration: 3000
+	}
+	})
 
 	// brush animation --------------
 	
 	const brushimg = useSpring({
-	to: [{marginTop: '-250px', marginRight:  '0%'}],
-	from: {marginTop: '110px', marginRight: location ? '-100%' : '-30%'},
+	to: [{top: '-80px', }],
+	from: {top: '110px', },
 	config: {
 		duration: 300
 	}
@@ -63,34 +53,18 @@ const SkillBanner =(props)=>{
 	// Gear animation --------------
 
 	const gearimg= useSpring({
-		to: [{marginRight: '-10%',
-	
-					marginTop: width <= 768 ? location ?
-					location.name === "fromTechnology"
-					? '-80px' : '-80px' : '-80px' :  location ?
-					location.name === "fromTechnology"
-					? '-210px' : '-210px' : '-210px'
-				}],
-		from: {marginRight: location ?
-					location.name === "fromTechnology" ?
-					'0%' : '57%' : '57%',
-	
-					marginTop: width <= 768 ? location ?
-					location.name === "fromTechnology"
-					? '-350px' : '-80px' : '-80px' :  location ?
-					location.name === "fromTechnology"
-					? '-350px' : '-210px' : '-210px'
-					 },
-		config: {
-			duration: 300
-		}
-		})
+		to: [{ right: '-100px', }],
+		from: { right: '500px', },
+	config: {
+		duration: 3000
+	}
+	})
 
 
     return(
 			<div>
         <animated.div className="skill-banner" style={container}>
-					<h1>Skill</h1>
+					
 				<animated.div className="skill-img1" style={leafimg}  >
 						
 					<Link
@@ -107,23 +81,9 @@ const SkillBanner =(props)=>{
 					</Link>
 					
 				</animated.div>
-				<animated.div className="skill-img2" style={gearimg} >
+				{/* <h1>Skill</h1>s */}
+				
 
-					
-				<Link to={{
-					pathname:'/technology',
-					aboutProps:{
-						name: 'fromSkill'
-					}
-				}}>
-
-						<img  src={ circle} alt='img' >
-						</img>
-
-				</Link>
-					
-					
-				</animated.div>
 				<animated.div className="skill-img3" style={brushimg} >
 					
 
@@ -141,6 +101,24 @@ const SkillBanner =(props)=>{
 					
 
 
+				</animated.div>
+
+				<animated.div className="skill-img2" style={gearimg} >
+
+					
+				<Link to={{
+					pathname:'/technology',
+					aboutProps:{
+						name: 'fromSkill'
+					}
+				}}>
+
+						<img  src={ circle} alt='img' >
+						</img>
+
+				</Link>
+					
+					
 				</animated.div>
 				</animated.div>
 				<SectionOne />
