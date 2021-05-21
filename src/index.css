@@ -188,51 +188,6 @@ body {
 /* environment ---- */
 
 
-
-.environment-banner{
-  background-image: url('./images/evironmentbg-shape.png');
-  background-position: center;
-  background-size:100% 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.environment-banner h1{
-  margin: 0px auto 80px auto;
-  color: white;
-}
-
-.environment-img1{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  z-index: 5;
-}
-
-.environment-img1 a{
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  margin: auto 0px 150px 0px;
-}
-
-
-.environment-img2{
-  position: absolute;
-}
-
-.leaf-img{
-  width: 100%;
-} 
-
-/*environment mediaquery  */
-
 .environment-banner{
   background-image: url('./images/evironmentbg-shape.png');
   background-position: center;
@@ -253,15 +208,17 @@ body {
 
 .environment-img1{
   position: absolute;
-  z-index: 5;
-  width: 8%;
+  z-index: 1000;
   transform:translateX(-50%);
+}
+
+.environment-img1 img{
+  width: 100px;
 }
 
 .environment-img1 a{
   display: flex;
   justify-content: center;
-  margin: auto 0px 150px 0px;
 }
 
 
@@ -276,9 +233,7 @@ body {
 
 }
 
-.leaf-img{
-  width: 100%;
-} 
+
 
 /*environment mediaquery  */
 
@@ -290,24 +245,16 @@ body {
     width: 150px;
   }
   .environment-banner h1{
-    margin: 40px auto 0px auto;
     font-size:30px;
-  }
-  .environment-img1{
-    width: 12%;
   }
   
 }
 
-@media(max-width:600px){
-  .environment-img1{
-    width: 15%;
-  }
-}
+
 
 @media(max-width:450px){
-  .environment-img1{
-    width: 20%;
+  .environment-img1 img{
+    width: 80px;
   }
   .environment-img2 img{
     width: 130px;
@@ -321,12 +268,9 @@ body {
   .environment-banner h1{
     font-size:25px;
   }
- 
 }
 
 /* technology ----- */
-
-
 
 .technology-banner{
   background-image: url('./images/technologybg-shape.png');
@@ -363,7 +307,6 @@ body {
   display: flex;
   justify-content: center;
   z-index: 5;
-  width: 8%;
 }
 
 .technology-img2 a{
@@ -372,9 +315,10 @@ body {
   justify-content: center;
 }
 
-.gear-img{
-  width: 100%;
+.technology-img2 img{
+  width: 100px;
 }
+
 
 /* technology mediaquery -- */
 
@@ -391,23 +335,16 @@ body {
   .technology-banner h1{
     font-size: 30px;
   }
-  .technology-img2{
-    width: 12%;
-  }
 }
 
-@media(max-width:600px){
-  .technology-img2{
-    width: 15%;
-  }
-}
+
 
 @media(max-width:450px){
   .technology-banner h1{
     font-size: 25px;
   }
-  .technology-img2{
-    width: 20%;
+  .technology-img2 img{
+    width: 80px;
   }
   .technology-img1 img{
     width: 130px;
@@ -458,7 +395,6 @@ body {
 .skill-img3{
   position: absolute;
   z-index: 1000;
-  width: 8%;
   transform:translateX(50%);
 }
 
@@ -467,9 +403,9 @@ body {
   justify-content: center;
 }
 
-.brush-img{
-  width: 100%;
-} 
+.skill-img3 img{
+  width: 100px;
+}
 
 /* skill mediaquery  */
 
@@ -480,9 +416,6 @@ body {
   .skill-img2 img{
     width: 150px;
   }
-  .skill-img3{
-    width: 12%;
-  }
   .skill-img3 a{
     margin: auto;
   }
@@ -492,14 +425,9 @@ body {
   }
 }
 
-@media(max-width:600px){
-  .skill-img3{
-    width: 15%;
-  }
-}
 @media(max-width:450px){
-  .skill-img3{
-    width: 20%;
+  .skill-img3 img{
+    width: 80px;
   }
   .skill-img1 img{
     width: 130px;
@@ -508,6 +436,7 @@ body {
     width: 130px;
   }
 }
+
 
 
 
