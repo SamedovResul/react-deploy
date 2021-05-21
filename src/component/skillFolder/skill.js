@@ -16,7 +16,7 @@ const SkillBanner =(props)=>{
 
 	let location = props.location.aboutProps
 	const { innerWidth: width} = window;
-	
+	console.log(location)
 	
 
     const container = useSpring({
@@ -33,36 +33,80 @@ const SkillBanner =(props)=>{
 	// Leaf animation --------------
 
 	const leafimg = useSpring({
-	to: [{ left: '-100px', }],
-	from: { left: '300px', },
+	to: [{ 
+	left:location ? location.name === 'fromEnvironment'? 
+	'0%': '0%' : '0%' ,
+	
+	top: width <= 768 ? '37px' : '97px'
+	 }],
+
+
+	from: { left: location ?
+		location.name === 'fromEnvironment'? 
+		'50%' : '0%' : '25%',
+
+	top: width <= 768 ? 
+	location ? 
+	location.name === 'fromEnvironment'? 
+	'-50px' : '37px' : '37px'  :  location ?
+	location.name === 'fromEnvironment'? 
+	'-100px' : '97px' : '97px'
+},
 	config: {
-		duration: 3000
+		duration: 500
 	}
 	})
 
 	// brush animation --------------
 	
 	const brushimg = useSpring({
-	to: [{top: '-80px', }],
-	from: {top: '110px', },
+	to: [{top: '-48px', right: '50%' }],
+
+
+	from: {top: '150px',
+	right: location ? location.name === 'fromEnvironment'?
+	'0%' :  '-5%' : '23%' },
 	config: {
-		duration: 300
+		duration: 500
 	}
 	})
 
 	// Gear animation --------------
 
 	const gearimg= useSpring({
-		to: [{ right: '-100px', }],
-		from: { right: '500px', },
+		to: [{ 
+			right:location ? 
+			location.name === 'fromEnvironment'? 
+			'0%' : '0%': '0%',
+
+
+			top: width <= 768 ?
+			location ? location.name === 'fromEnvironment'? 
+			'37px' : '37px' : '37px' : location ?
+			location.name === 'fromEnvironment'? 
+			'97px' : '97px' : '97px'
+		}],
+		from: { 
+			right:  location ? 
+			location.name === 'fromEnvironment' ? 
+			'100%' : '50%' : '50%' ,
+
+
+
+			top: width <= 768 ?
+			location ? location.name === 'fromEnvironment'? 
+			'37px' : '-97px' : '37px' : location ? 
+			location.name === 'fromEnvironment'? 
+			'97px' : '-97px' : '97px'
+		 },
 	config: {
-		duration: 3000
+		duration: 500
 	}
 	})
 
 
     return(
-			<div>
+			<div className="test">
         <animated.div className="skill-banner" style={container}>
 					
 				<animated.div className="skill-img1" style={leafimg}  >
@@ -81,7 +125,7 @@ const SkillBanner =(props)=>{
 					</Link>
 					
 				</animated.div>
-				{/* <h1>Skill</h1>s */}
+				<h1>Skill</h1>
 				
 
 				<animated.div className="skill-img3" style={brushimg} >

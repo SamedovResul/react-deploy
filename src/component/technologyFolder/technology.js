@@ -22,63 +22,76 @@ const TecnologyBanner = (props) =>{
 		// Leaf animation --------------
 
 		const leafimg = useSpring({
-		to: [{marginLeft: '-100%',
-					marginTop: location ? 
-					location.name === 'fromEnvironment' ? 
-					'0%' : 'unset' : 'unset'
+		to: [{left: '0%',
+
+
+					top:  width <= 768 ? location ? 
+					location.name === 'fromEnvironment' ?
+					'37px' : '37px' : '37px' :location ? 
+					location.name === 'fromEnvironment' ?
+					'97px' : '97px' : '97px'
 			 	}],
-		from: {marginLeft: location ?
-					location.name === 'fromSkill' ? 
-					'-100%' : '24%' : '10%',
-					marginTop: location ? location.name === 'fromEnvironment' ? 
-					'-20%' : 'unset' : 'unset'
+
+
+		from: {left: location ?
+					location.name === 'fromEnvironment' ? 	'50%' : '0%' : '33%',
+
+
+					top:  width <= 768 ? location ? 
+					location.name === 'fromEnvironment' ?
+					'-37px' : '37px' : '37px' : location ? 
+					location.name === 'fromEnvironment' ?
+					'-97px' : '97px' : '97px'
 				},
 		config: {
-			duration: 300
+			duration: 500
 		}
 		})
 
 		// Gear animation --------------
 
 		const gearimg   = useSpring({
-		to: [{marginTop: '-250px', marginLeft: location ? 
-					location.name === 'fromSkill' ? 
-					'0%' : '0%' : '0%'
+		to: [{top: '-48px', 
+
+					left: location ? 
+					location.name === 'fromEnvironment' ? 
+					'50%' : '50%' : '50%'
 				}],
-		from: {marginTop: '110px', marginLeft: location ? 
-					location.name === 'fromSkill' ? 
-					'100%' : '-100%' : '0%' 
+		from: {top: '97px', left: location ? 
+					location.name === 'fromEnvironment' ? 
+					'0%' : '100%' : '50%' 
 				},
 		config: {
-			duration: 300
+			duration: 500
 		}
 		})
 
 		// brush animation --------------
 
 		const brushimg = useSpring({
-		to: [{marginRight: location ? 
-					location.name === 'fromSkill' ? 
-					'-100%' : '-100%' : '-100%',
+		to: [{right: location ? 
+					location.name === 'fromEnvironment' ? 
+					'0%' : '0%' : '0%',
 
-					marginTop:  width <= 768 ? location ? 
-					location.name === 'fromSkill' ?
-					'-80px' : '-80px' : '-80px' :location ? 
-					location.name === 'fromSkill' ?
-					'-110px' : '-110px' : '-110px'
+					top:  width <= 768 ? location ? 
+					location.name === 'fromEnvironment' ?
+					'37px' : '37px' : '37px' :location ? 
+					location.name === 'fromEnvironment' ?
+					'97px' : '97px' : '97px'
 				}],
-		from: {marginRight: location ? 
-					location.name === 'fromSkill' ? 
-					'-10%' : '-100%' : '-20%' ,
+
+		from: {right: location ? 
+					location.name === 'fromEnvironment' ? 
+					'0%' : '50%' : '30%' ,
 				
-					marginTop: width <= 768 ? location ? 
-					location.name === 'fromSkill' ?
-					'-350px' :  '-80px' : '-80px': location ? 
-					location.name === 'fromSkill' ?
-					'-350px' : '-110px' : '-110px'
+					top: width <= 768 ? location ? 
+					location.name === 'fromEnvironment' ?
+					'37px' :  '-48px' : '37px': location ? 
+					location.name === 'fromEnvironment' ?
+					'97px' : '-110px' : '97px'
 					},
 			config: {
-				duration: 300
+				duration: 500
 			}
 		})
 

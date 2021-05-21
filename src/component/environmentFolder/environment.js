@@ -34,21 +34,16 @@ const Environment = (props) =>{
 		// Leaf animation --------------
 
 		const leafimg = useSpring({
-		to: [{
-			marginTop: location ? width <= 768 ? 
-			"-250px" : '-250px' : width <= 768 ?
-			 '-250px': '-250px',
-			marginRight: location ? 
-			location.name === 'fromTechnology' ?
-			"0%" : location.name === 'fromSkill' ?
-			'0%' : '0%' : '0%' ,
-		 }],
-  	from: {
-			marginTop: location ? '0px' : '20px',
-			marginRight: location ?  '100%' : "60%",
-			},
+			to: [{top: '-48px', left: '50%' }],
+
+
+			from: {top: width <= 768 ? '80px' : '140px',
+
+
+			left: location ? location.name === 'fromTechnology'?
+			'0%' :  '0%' : '30%' },
 			config: {
-			duration: 300
+				duration: 500
 			}
 		})
 
@@ -58,53 +53,57 @@ const Environment = (props) =>{
 		// Gear animation --------------
 
 		const gearimg = useSpring({
-		to: [{marginRight: '100%' , marginTop: location ? '0%' : '0%' }],
-  			from: {marginRight: location ? 
-				location.name === 'fromTechnology' ?
-				'-20%' : location.name === 'fromSkill' ? 
-				'-100%' : '100%' :  '0%', 
+		to: [{
+			left: '0%' ,
 			
-			marginTop: location ?  
+			top: width <= 768 ?  
+			location ? '37px' : '37px' :  location ? 
+			'97px' : '97px'
+	
+		}],
+
+
+			from: {left: location ? 
 			location.name === 'fromTechnology' ?
-			 '-25%' : location.name === 'fromSkill' ? 
-			 '0%' : '100%' : '-25%'
+			'50%' : '100%' :  '50%', 
+			
+			top: width <= 768 ? location ?  
+			location.name === 'fromTechnology' ?
+			 '-37px' : '37px' : '37px' : location ?  
+			 location.name === 'fromTechnology' ?
+				'-97px' : '97px' : '97px'
 			 },
 			config: {
-				duration: 300 
+				duration: 500 
 			}
 		})
 
 		// Brush animation --------------
 		
 		const brushimg = useSpring({
-		to: [{marginLeft: location ?
+		to: [{right: location ?
 			location.name === 'fromTechnology' ?
-				'100%' : location.name === 'fromSkill'? 
-				'100%' : '0%' : '100%',
+			'0%' : '0%' : '0%',
 
-			marginTop: width <= 768 ? location ? 
-			location.name === 'fromTechnology' ? '-80px' :
-			location.name === 'fromSkill' ? 
-			'-80px' : '-80px' : '-80px'   :    location ? 
-			location.name === 'fromTechnology' ? '-110px' :  
-			location.name === 'fromSkill' ? 
-			'-110px' : '-110px' : '-110px'
+			top: width <= 768 ? location ? 
+			location.name === 'fromTechnology' ? 
+			'37px' : '37px' : '37px'   :    location ? 
+			location.name === 'fromTechnology' ?
+			'97px' : '97px' : '97px'
 		,	
 		}],
-  		from: {marginLeft: location ?
+  		from: {right: location ?
 			location.name === 'fromTechnology' ?
-			 '100%' : location.name === 'fromSkill'? 
-			 '-5%' : '0%' : '0%',
+			'0%' : '50%' : '30%',
 			
-			marginTop: width <= 768 ? location ? 
-			location.name === 'fromTechnology' ?  '-80px' :
-			location.name === 'fromSkill' ? 
-			'-250px' : '-80px' : '-80px'  :  location ? 
-			location.name === 'fromTechnology' ?  '-110px' :  location.name === 'fromSkill' ? 
-			'-380px' : '-110px' : '-110px'
+			top: width <= 768 ? location ? 
+			location.name === 'fromTechnology' ?  
+			'37px' : '-37px' : '37px'  :  location ? 
+			location.name === 'fromTechnology' ? 
+			'97px' : '-97px' : '97px'
 			},
 			config: {
-				duration: 300
+				duration: 500
 			}
 		})
 
