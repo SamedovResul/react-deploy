@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/react-deploy/static/css/main.14f44c31.chunk.css",
+    "main.js": "/react-deploy/static/js/main.1e36937b.chunk.js",
+    "main.js.map": "/react-deploy/static/js/main.1e36937b.chunk.js.map",
+    "runtime-main.js": "/react-deploy/static/js/runtime-main.92a2d867.js",
+    "runtime-main.js.map": "/react-deploy/static/js/runtime-main.92a2d867.js.map",
+    "static/css/2.043f7251.chunk.css": "/react-deploy/static/css/2.043f7251.chunk.css",
+    "static/js/2.475d527f.chunk.js": "/react-deploy/static/js/2.475d527f.chunk.js",
+    "static/js/2.475d527f.chunk.js.map": "/react-deploy/static/js/2.475d527f.chunk.js.map",
+    "index.html": "/react-deploy/index.html",
+    "static/css/2.043f7251.chunk.css.map": "/react-deploy/static/css/2.043f7251.chunk.css.map",
+    "static/css/main.14f44c31.chunk.css.map": "/react-deploy/static/css/main.14f44c31.chunk.css.map",
+    "static/js/2.475d527f.chunk.js.LICENSE.txt": "/react-deploy/static/js/2.475d527f.chunk.js.LICENSE.txt",
+    "static/media/Gunay.a0eef6d9.png": "/react-deploy/static/media/Gunay.a0eef6d9.png",
+    "static/media/brush.2ccead26.png": "/react-deploy/static/media/brush.2ccead26.png",
+    "static/media/circle.0a8fc4b9.png": "/react-deploy/static/media/circle.0a8fc4b9.png",
+    "static/media/index.css": "/react-deploy/static/media/wave.189a9e28.png",
+    "static/media/guneshsistemi.13590909.png": "/react-deploy/static/media/guneshsistemi.13590909.png",
+    "static/media/image-1.efc16189.jpg": "/react-deploy/static/media/image-1.efc16189.jpg",
+    "static/media/image-2.e9f48d44.jpg": "/react-deploy/static/media/image-2.e9f48d44.jpg",
+    "static/media/image-3.227c8323.jpg": "/react-deploy/static/media/image-3.227c8323.jpg",
+    "static/media/layout.6adcf28c.png": "/react-deploy/static/media/layout.6adcf28c.png",
+    "static/media/leaf.b6f63734.png": "/react-deploy/static/media/leaf.b6f63734.png",
+    "static/media/robotimg.fa8eab44.png": "/react-deploy/static/media/robotimg.fa8eab44.png",
+    "static/media/robotimg2.1a5ff5c9.png": "/react-deploy/static/media/robotimg2.1a5ff5c9.png",
+    "static/media/robotimg3.acb33747.png": "/react-deploy/static/media/robotimg3.acb33747.png",
+    "static/media/slick-theme.css": "/react-deploy/static/media/slick.c94f7671.ttf",
+    "static/media/video1.c19e6d26.mp4": "/react-deploy/static/media/video1.c19e6d26.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.92a2d867.js",
+    "static/css/2.043f7251.chunk.css",
+    "static/js/2.475d527f.chunk.js",
+    "static/css/main.14f44c31.chunk.css",
+    "static/js/main.1e36937b.chunk.js"
+  ]
+}
